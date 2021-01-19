@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1c1c1c;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* HEADER*/
+
+header {
+    background-color: #f4f4f4;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*  LOGO*/
+
+.color-orange {
+    color: #d7a02f;
+}
+
+.logo {
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.logo span {
+    padding: 10px;
+}
+
+.monCompte {
+    justify-content: space-around;
+    display: flex;
+    width: 500px;
+    height: 70px;
+    padding-top: 10px;
+    margin-right: 195px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.monCompte>figure>figcaption>h3:nth-child(1) {
+    position: absolute;
+    font-size: 0.7em;
+    right: 255px;
+    top: 39px;
+}
+
+
+/* doit venir se placer à côté du caddie*/
+
+.monCompte>figure>figcaption>h3:nth-child(2) {
+    position: absolute;
+    font-size: 0.7em;
+    right: 200px;
+    top: 39px;
+}
+
+header>h2 {
+    margin-left: 900px;
+    color: #373737;
+    font-size: .9em;
+}
+
+nav {
+    text-align: right;
+    padding: 10px;
+    width: 500px;
+    margin-left: 500px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #373737;
+    padding: 20px;
+    /* border-right:1px  solid #373737 ; */
+    border-left: 1px solid #373737;
+}
+
+
+/* CORRECTION */
+
+nav a:nth-child(3) {
+    border-right: 1px solid #373737;
+}
+
+
+/*BANNIERE*/
+
+.baniere>img {
+    width: 960px;
+}
+
+.baniere {
+    background-color: #1c1c1c;
+}
+
+
+/* CONTAIN */
+
+.contain {
+    margin: auto;
+    width: 960px;
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gant {
+    position: relative;
+    width: 250px;
+}
+
+.gant>figure>img {
+    padding: 10px;
+    box-shadow: 1px 1px 12px #555;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.gant>figure>h2 {
+    position: absolute;
+    font-size: 0.7em;
+    top: 378px;
+    left: 38px;
+    text-align: center;
+}
+
+span {
+    color: #d7a02f;
+    font-weight: bold;
+}
+
+.remise>span {
+    position: absolute;
+    left: 379px;
+    top: 45px;
+    background-color: #3b3b3b;
+    padding: 5px;
+    box-shadow: 1px 1px 12px black;
+}
+
+input {
+    width: 110px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.vente>p {
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    text-decoration: line-through;
+    font-size: 1.1em;
+}
+
+.vente>span {
+    position: absolute;
+    left: 340px;
+    top: 400px;
+    font-size: 1.1em;
+}
+
+
+/* MON COMPTE  */
+
+.bcg-grey {
+    background-color: #eaeaea;
+}
+
+.color-white {
+    color: white;
+}
+
+.bcg-black {
+    background-color: black;
+}
+
+
+/* LIGNE HORIZONTALE*/
+
+.ligne_horizontale {
+    background-color: #373737;
+    height: 20px;
+    /* position: absolute; */
+    /* le body est en position relative*/
+    /* CORRECTION */
+    position: relative;
+    top: -50px;
+}
+
+
+/*FOOTER*/
+
+.bcg-dark-grey {
+    background-color: #373737;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 1px 5px black;
+    /* margin-right: 685px;
+     margin-left: 450px; */
+    width: 370px;
+    /* CORRECTION */
+    position: absolute;
+    left: 38%;
+    bottom: 233px;
+}
+
+ul a {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+/* SERVICE */
+
+.service {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-left: 220px;
+    padding-right: 400px;
+    padding-top: 25px;
+}
+
+.sous-service {
+    width: 200px;
+    flex-direction: column;
+    display: flex;
+    text-align: justify;
+    font-size: .75em;
+}
+
+.sous-service>img {
+    width: min-content;
+    text-align: center;
+    margin-left: 65px;
+}
+
+
+/*reseaux sociaux*/
+
+.reseau {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+}
+
+.link-fb,
+.link-tw,
+.link-in {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+
+h5 {
+    font-weight: normal;
+}
