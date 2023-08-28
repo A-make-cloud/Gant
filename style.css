@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,15 +15,18 @@ body {
 
 
 /* HEADER*/
+nav {
+    text-align: right;
+    /* padding: 10px;
+    width: 500px;
+    margin-left: 500px; */
+}
 
 header {
     background-color: #f4f4f4;
 }
 
-.top {
-    display: flex;
-    justify-content: space-around;
-}
+
 
 
 /*  LOGO*/
@@ -74,12 +78,7 @@ header>h2 {
     font-size: .9em;
 }
 
-nav {
-    text-align: right;
-    padding: 10px;
-    width: 500px;
-    margin-left: 500px;
-}
+
 
 nav a {
     text-decoration: none;
@@ -101,7 +100,7 @@ nav a:nth-child(3) {
 /*BANNIERE*/
 
 .baniere>img {
-    width: 960px;
+    width: 96vw;
 }
 
 .baniere {
@@ -110,13 +109,51 @@ nav a:nth-child(3) {
 
 
 /* CONTAIN */
+@media (max-width: 992px) {
+    .top {
+        display: inline-block;
+        width: 75%;
 
-.contain {
-    margin: auto;
-    width: 960px;
-    background-color: #f3f3f3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    }
+
+    nav {
+        text-align: center;
+
+    }
+
+    footer ul {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .top {
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+    .contain {
+        margin: auto;
+        width: 960px;
+        background-color: #f3f3f3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        padding-left: 220px;
+        padding-right: 400px;
+        padding-top: 25px;
+    }
+
+
 }
 
 .gant {
@@ -195,9 +232,7 @@ input {
 .ligne_horizontale {
     background-color: #373737;
     height: 20px;
-    /* position: absolute; */
-    /* le body est en position relative*/
-    /* CORRECTION */
+
     position: relative;
     top: -50px;
 }
@@ -215,10 +250,9 @@ ul {
     background-color: #f4f4f4;
     border-radius: 0 0 5px 5px;
     box-shadow: 1px 5px black;
-    /* margin-right: 685px;
-     margin-left: 450px; */
+
     width: 370px;
-    /* CORRECTION */
+
     position: absolute;
     left: 38%;
     bottom: 233px;
@@ -237,14 +271,7 @@ li {
 
 /* SERVICE */
 
-.service {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    padding-left: 220px;
-    padding-right: 400px;
-    padding-top: 25px;
-}
+
 
 .sous-service {
     width: 200px;
@@ -276,6 +303,10 @@ li {
     height: 30px;
     width: 30px;
     padding: 10px;
+}
+
+.reseau-link {
+    margin-right: 15px;
 }
 
 h5 {
